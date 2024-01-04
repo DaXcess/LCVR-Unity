@@ -10,9 +10,14 @@ using UnityEngine.XR.Interaction.Toolkit.UI;
 
 public class MainScript : MonoBehaviour
 {
+    [SerializeField]
+    InputActionAsset actions;
+
     // Start is called before the first frame update
     void Start()
     {
+        System.IO.File.WriteAllText(@"C:\Users\DaXcess\inputs.json", actions.ToJson());
+
         NonNativeKeyboard.Instance.PresentKeyboard();
     }
 
