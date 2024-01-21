@@ -514,52 +514,52 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - fileID: 21300000
-      guid: 1dd609342d57c8b46a690b7255e489f3
+      guid: 1b00d30f736c61345ad90630aa5612cd
       type: 2
     - fileID: 21300000
-      guid: cd7e38afa20bb714eabbe27ab2833a06
+      guid: c8e9cf24a80caa240b22d48527e81da6
       type: 2
     - fileID: 21300000
-      guid: 8be335da031acd54ab71f5361eb52411
+      guid: 3d48a8662c0575b4286a9030db77ee84
       type: 2
     - fileID: 21300000
-      guid: 1545cf571bff58e4db1f6dcc9fce6a76
+      guid: 1575edd5a9f5fa143a4eec7519efcd87
       type: 2
     - fileID: 21300000
-      guid: 1dd609342d57c8b46a690b7255e489f3
+      guid: 1b00d30f736c61345ad90630aa5612cd
       type: 2
     - fileID: 21300000
-      guid: 1dd609342d57c8b46a690b7255e489f3
+      guid: 1b00d30f736c61345ad90630aa5612cd
       type: 2
     - fileID: 21300000
-      guid: cd7e38afa20bb714eabbe27ab2833a06
+      guid: c8e9cf24a80caa240b22d48527e81da6
       type: 2
     - fileID: 21300000
-      guid: 8be335da031acd54ab71f5361eb52411
+      guid: 3d48a8662c0575b4286a9030db77ee84
       type: 2
     - fileID: 21300000
-      guid: 1545cf571bff58e4db1f6dcc9fce6a76
+      guid: 1575edd5a9f5fa143a4eec7519efcd87
       type: 2
     - fileID: 21300000
-      guid: 1dd609342d57c8b46a690b7255e489f3
+      guid: 1b00d30f736c61345ad90630aa5612cd
       type: 2
     - fileID: 21300000
-      guid: 1dd609342d57c8b46a690b7255e489f3
+      guid: 1b00d30f736c61345ad90630aa5612cd
       type: 2
     - fileID: 21300000
-      guid: cd7e38afa20bb714eabbe27ab2833a06
+      guid: c8e9cf24a80caa240b22d48527e81da6
       type: 2
     - fileID: 21300000
-      guid: 8be335da031acd54ab71f5361eb52411
+      guid: 3d48a8662c0575b4286a9030db77ee84
       type: 2
     - fileID: 21300000
-      guid: 1545cf571bff58e4db1f6dcc9fce6a76
+      guid: 1575edd5a9f5fa143a4eec7519efcd87
       type: 2
     - fileID: 21300000
-      guid: 1dd609342d57c8b46a690b7255e489f3
+      guid: 1b00d30f736c61345ad90630aa5612cd
       type: 2
     - fileID: 21300000
-      guid: 1dd609342d57c8b46a690b7255e489f3
+      guid: 1b00d30f736c61345ad90630aa5612cd
       type: 2
   m_AnimationClipSettings:
     serializedVersion: 2

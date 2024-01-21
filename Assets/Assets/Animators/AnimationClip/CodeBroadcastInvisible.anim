@@ -113,10 +113,10 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - fileID: 21300000
-      guid: 173144f8a2d520848bde510fb23f1caa
+      guid: 19da23099bc91004ab58f892df5a69a0
       type: 2
     - fileID: 21300000
-      guid: 173144f8a2d520848bde510fb23f1caa
+      guid: 19da23099bc91004ab58f892df5a69a0
       type: 2
   m_AnimationClipSettings:
     serializedVersion: 2

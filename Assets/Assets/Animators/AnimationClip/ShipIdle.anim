@@ -682,7 +682,7 @@ AnimationClip:
     - time: 0
       value:
         fileID: 2100000
-        guid: 74ea869eb1cd39a4286073773d00cbbb
+        guid: bd2a07f38f49c0b4f91ec14cc5ab4012
         type: 2
     attribute: m_Materials.Array.data[1]
     path: ShipModels2b/Light (3)
@@ -695,7 +695,7 @@ AnimationClip:
     - time: 0
       value:
         fileID: 2100000
-        guid: 74ea869eb1cd39a4286073773d00cbbb
+        guid: bd2a07f38f49c0b4f91ec14cc5ab4012
         type: 2
     attribute: m_Materials.Array.data[1]
     path: ShipModels2b/Light (2)
@@ -708,7 +708,7 @@ AnimationClip:
     - time: 0
       value:
         fileID: 2100000
-        guid: 74ea869eb1cd39a4286073773d00cbbb
+        guid: bd2a07f38f49c0b4f91ec14cc5ab4012
         type: 2
     attribute: m_Materials.Array.data[1]
     path: ShipModels2b/Light (1)
@@ -721,7 +721,7 @@ AnimationClip:
     - time: 0
       value:
         fileID: 2100000
-        guid: 74ea869eb1cd39a4286073773d00cbbb
+        guid: bd2a07f38f49c0b4f91ec14cc5ab4012
         type: 2
     attribute: m_Materials.Array.data[1]
     path: ShipModels2b/Light
@@ -1064,16 +1064,16 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - fileID: 2100000
-      guid: 74ea869eb1cd39a4286073773d00cbbb
+      guid: bd2a07f38f49c0b4f91ec14cc5ab4012
       type: 2
     - fileID: 2100000
-      guid: 74ea869eb1cd39a4286073773d00cbbb
+      guid: bd2a07f38f49c0b4f91ec14cc5ab4012
       type: 2
     - fileID: 2100000
-      guid: 74ea869eb1cd39a4286073773d00cbbb
+      guid: bd2a07f38f49c0b4f91ec14cc5ab4012
       type: 2
     - fileID: 2100000
-      guid: 74ea869eb1cd39a4286073773d00cbbb
+      guid: bd2a07f38f49c0b4f91ec14cc5ab4012
       type: 2
   m_AnimationClipSettings:
     serializedVersion: 2

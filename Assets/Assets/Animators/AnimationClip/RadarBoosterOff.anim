@@ -313,17 +313,17 @@ AnimationClip:
     - time: 0
       value:
         fileID: 2100000
-        guid: 3cbcb6562eb968e4296b966acedd4a20
+        guid: 9a83c253e9f9cdc499baed75cc70087c
         type: 2
     - time: 0.05
       value:
         fileID: 2100000
-        guid: 13eec6f4c59fb894daddee98d9b9ecf0
+        guid: b72f54fbe79d8844cb76a8eaf4ebbb0f
         type: 2
     - time: 0.15
       value:
         fileID: 2100000
-        guid: 13eec6f4c59fb894daddee98d9b9ecf0
+        guid: b72f54fbe79d8844cb76a8eaf4ebbb0f
         type: 2
     attribute: m_Materials.Array.data[0]
     path: Rod
@@ -396,13 +396,13 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - fileID: 2100000
-      guid: 3cbcb6562eb968e4296b966acedd4a20
+      guid: 9a83c253e9f9cdc499baed75cc70087c
       type: 2
     - fileID: 2100000
-      guid: 13eec6f4c59fb894daddee98d9b9ecf0
+      guid: b72f54fbe79d8844cb76a8eaf4ebbb0f
       type: 2
     - fileID: 2100000
-      guid: 13eec6f4c59fb894daddee98d9b9ecf0
+      guid: b72f54fbe79d8844cb76a8eaf4ebbb0f
       type: 2
   m_AnimationClipSettings:
     serializedVersion: 2

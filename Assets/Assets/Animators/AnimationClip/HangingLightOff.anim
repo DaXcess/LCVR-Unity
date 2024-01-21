@@ -48,12 +48,12 @@ AnimationClip:
     - time: 0
       value:
         fileID: 2100000
-        guid: 2a3f5a13b45a9e2478e5dc5255ea4d17
+        guid: 3ba4f3556de2eb8418d47505e5f5b6df
         type: 2
     - time: 0.033333335
       value:
         fileID: 2100000
-        guid: 2a3f5a13b45a9e2478e5dc5255ea4d17
+        guid: 3ba4f3556de2eb8418d47505e5f5b6df
         type: 2
     attribute: m_Materials.Array.data[3]
     path: Mesh
@@ -66,12 +66,12 @@ AnimationClip:
     - time: 0
       value:
         fileID: 2100000
-        guid: a99d16f4d4741bb4693f3694e12ba986
+        guid: c703ccbdc18e79c479849ae296883bc7
         type: 2
     - time: 0.033333335
       value:
         fileID: 2100000
-        guid: a99d16f4d4741bb4693f3694e12ba986
+        guid: c703ccbdc18e79c479849ae296883bc7
         type: 2
     attribute: m_Materials.Array.data[1]
     path: Mesh2
@@ -124,16 +124,16 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - fileID: 2100000
-      guid: 2a3f5a13b45a9e2478e5dc5255ea4d17
+      guid: 3ba4f3556de2eb8418d47505e5f5b6df
       type: 2
     - fileID: 2100000
-      guid: 2a3f5a13b45a9e2478e5dc5255ea4d17
+      guid: 3ba4f3556de2eb8418d47505e5f5b6df
       type: 2
     - fileID: 2100000
-      guid: a99d16f4d4741bb4693f3694e12ba986
+      guid: c703ccbdc18e79c479849ae296883bc7
       type: 2
     - fileID: 2100000
-      guid: a99d16f4d4741bb4693f3694e12ba986
+      guid: c703ccbdc18e79c479849ae296883bc7
       type: 2
   m_AnimationClipSettings:
     serializedVersion: 2

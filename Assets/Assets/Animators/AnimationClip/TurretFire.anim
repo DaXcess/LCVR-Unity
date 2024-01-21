@@ -278,7 +278,7 @@ AnimationClip:
     - time: 0
       value:
         fileID: 2100000
-        guid: 908ab94206ae9534aa735e7c0a9e243c
+        guid: 3787b3c8498b48b4cbd7d5abe589c07d
         type: 2
     attribute: m_Materials.Array.data[0]
     path: RotatingRodContainer/Rod/GunBody/LightSphere
@@ -353,7 +353,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - fileID: 2100000
-      guid: 908ab94206ae9534aa735e7c0a9e243c
+      guid: 3787b3c8498b48b4cbd7d5abe589c07d
       type: 2
   m_AnimationClipSettings:
     serializedVersion: 2
