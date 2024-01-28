@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.UI;
 
@@ -16,9 +18,10 @@ public class MainScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        System.IO.File.WriteAllText(@"C:\Users\DaXcess\inputs.json", actions.ToJson());
+        var asset = QualitySettings.renderPipeline as HDRenderPipelineAsset;
+        var settings = asset.currentPlatformRenderPipelineSettings;
 
-        NonNativeKeyboard.Instance.PresentKeyboard();
+        Debug.Log(settings.dynamicResolutionSettings.upsampleFilter);
     }
 
     private ActionBasedController controller;

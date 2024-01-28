@@ -2,6 +2,74 @@
     "name": "XR Input Actions",
     "maps": [
         {
+            "name": "Head",
+            "id": "97e4a80c-fa9e-43f1-b826-e6018f81a1e4",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "bc720797-2d8b-41fb-9088-e484d87766e2",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "71b57178-a371-4519-915b-d9f23ed1fed3",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Tracking State",
+                    "type": "Value",
+                    "id": "2f7f2c29-7abe-43ec-8c69-712cb84dbfc4",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4d45f603-364d-4fbd-aa7c-7baa20814d59",
+                    "path": "<XRHMD>/centerEyePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a75d1cb6-283b-4b1a-9c89-529d2acf0fca",
+                    "path": "<XRHMD>/centerEyeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4a7f68d8-067d-47ea-b589-f699949d496e",
+                    "path": "<XRHMD>/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "LeftHand",
             "id": "00abf591-afb3-4963-9978-b14b784c7115",
             "actions": [
@@ -508,7 +576,7 @@
                 {
                     "name": "",
                     "id": "cba145b5-1d1b-4299-810e-6c8dee98cfde",
-                    "path": "<XRController>{LeftHand}/{Grip}",
+                    "path": "<XRController>{RightHand}/{Grip}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

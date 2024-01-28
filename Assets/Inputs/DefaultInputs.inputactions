@@ -2,6 +2,114 @@
     "name": "DefaultInputs",
     "maps": [
         {
+            "name": "Controls",
+            "id": "80e5e9eb-ce0b-4a64-851a-3ac2d9638118",
+            "actions": [
+                {
+                    "name": "Reset Height",
+                    "type": "Button",
+                    "id": "b2ec8a93-37f0-4385-9b52-c9003309f1af",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "765099c4-7c97-45b9-849b-1b8e5e6dd641",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Turn",
+                    "type": "Value",
+                    "id": "ac8cad95-23ff-4fde-9385-b25d7b04b868",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pivot",
+                    "type": "Value",
+                    "id": "f028cb64-a3f7-4101-90d4-30cc1fb73592",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "8131f75e-cf47-4787-bd52-07dd45d7e2eb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "999af60d-8da7-42dc-aa61-06c484e9a8e3",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset Height",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3055ade-c2b9-479f-b45d-32c3ba2ed300",
+                    "path": "<XRController>{RightHand}/gripButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f31de753-e706-4d98-8ef0-e06dba97bbc7",
+                    "path": "<XRController>{RightHand}/primary2DAxis/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a16f20c-9b10-42ba-b176-8c6bdfbebef5",
+                    "path": "<XRController>{RightHand}/primary2DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pivot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a72ff720-f8fe-4b2d-8b3a-def7f0974a60",
+                    "path": "<XRController>{LeftHand}/{Primary2DAxisClick}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "Movement",
             "id": "1560e87b-23aa-4005-bf8b-264f6a3c3736",
             "actions": [
@@ -429,210 +537,6 @@
             ]
         },
         {
-            "name": "Head",
-            "id": "440470cd-c5cf-4c02-8070-555c010e14ba",
-            "actions": [
-                {
-                    "name": "Position",
-                    "type": "Value",
-                    "id": "5717b0b1-42d1-40a3-8d3a-2ad918ee118a",
-                    "expectedControlType": "Vector3",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Rotation",
-                    "type": "Value",
-                    "id": "58d80355-9299-4830-91cc-023a0adb5954",
-                    "expectedControlType": "Quaternion",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Tracking State",
-                    "type": "Value",
-                    "id": "0eb5dc53-9b3f-4f07-8251-75ed7dcc129e",
-                    "expectedControlType": "Integer",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "00da7b1a-ca67-431b-9c09-c848cd442abd",
-                    "path": "<XRHMD>/centerEyePosition",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "42afc641-10ee-48a0-b073-25a781d1fd4f",
-                    "path": "<XRHMD>/centerEyeRotation",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8a72754f-712e-4d3e-b1b2-37bfe20004ee",
-                    "path": "<XRHMD>/trackingState",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Tracking State",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Right Hand",
-            "id": "4800470d-2fc5-4779-8846-32ac9ff52a20",
-            "actions": [
-                {
-                    "name": "Position",
-                    "type": "Value",
-                    "id": "d6f05c39-017a-4589-bf11-d43742cf27ef",
-                    "expectedControlType": "Vector3",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Rotation",
-                    "type": "Value",
-                    "id": "3688aa5f-a6d3-4a12-a186-d92a6b00c1af",
-                    "expectedControlType": "Quaternion",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Tracking State",
-                    "type": "Value",
-                    "id": "f4bd8116-f3af-427f-8853-4931ed365162",
-                    "expectedControlType": "Integer",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "3de9211f-da85-4c83-8cb0-0d8cbbdc805f",
-                    "path": "<XRController>{RightHand}/deviceRotation",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3b8082c6-5e30-41e7-862e-10bb96cea501",
-                    "path": "<XRController>{RightHand}/devicePosition",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "cb1fee62-1654-42ae-a728-d06815f5abdb",
-                    "path": "<XRController>{RightHand}/trackingState",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Tracking State",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Left Hand",
-            "id": "2eb018c4-75c8-46ab-9671-cc19f24e70d4",
-            "actions": [
-                {
-                    "name": "Position",
-                    "type": "Value",
-                    "id": "d5b31633-3a15-47ce-a024-56658906249e",
-                    "expectedControlType": "Vector3",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Rotation",
-                    "type": "Value",
-                    "id": "76a9859c-7db3-419e-aced-5713d62e3b21",
-                    "expectedControlType": "Quaternion",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Tracking State",
-                    "type": "Value",
-                    "id": "0def4ba2-4b79-4301-9b4e-78cca99ed57c",
-                    "expectedControlType": "Integer",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "8f7a9a2b-12bc-4a55-a154-1a374cc083b1",
-                    "path": "<XRController>{LeftHand}/deviceRotation",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a9d77044-ceb7-4fa2-9398-056e6fe5c753",
-                    "path": "<XRController>{LeftHand}/devicePosition",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "cdb1801b-b104-4815-a5e8-e85893f211ad",
-                    "path": "<XRController>{LeftHand}/trackingState",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Tracking State",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
             "name": "Right Hand Fingers",
             "id": "3a4ca40c-a280-40fd-817a-7aef1800dfe0",
             "actions": [
@@ -785,114 +689,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Others",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Controls",
-            "id": "80e5e9eb-ce0b-4a64-851a-3ac2d9638118",
-            "actions": [
-                {
-                    "name": "Reset Height",
-                    "type": "Button",
-                    "id": "b2ec8a93-37f0-4385-9b52-c9003309f1af",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Interact",
-                    "type": "Button",
-                    "id": "765099c4-7c97-45b9-849b-1b8e5e6dd641",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Turn",
-                    "type": "Value",
-                    "id": "ac8cad95-23ff-4fde-9385-b25d7b04b868",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Pivot",
-                    "type": "Value",
-                    "id": "f028cb64-a3f7-4101-90d4-30cc1fb73592",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Sprint",
-                    "type": "Button",
-                    "id": "8131f75e-cf47-4787-bd52-07dd45d7e2eb",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "999af60d-8da7-42dc-aa61-06c484e9a8e3",
-                    "path": "<XRController>{LeftHand}/secondaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Reset Height",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d3055ade-c2b9-479f-b45d-32c3ba2ed300",
-                    "path": "<XRController>{RightHand}/gripButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f31de753-e706-4d98-8ef0-e06dba97bbc7",
-                    "path": "<XRController>{RightHand}/primary2DAxis/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Turn",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2a16f20c-9b10-42ba-b176-8c6bdfbebef5",
-                    "path": "<XRController>{RightHand}/primary2DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Pivot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a72ff720-f8fe-4b2d-8b3a-def7f0974a60",
-                    "path": "<XRController>{LeftHand}/{Primary2DAxisClick}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
