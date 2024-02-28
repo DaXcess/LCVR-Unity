@@ -70,7 +70,7 @@
             ]
         },
         {
-            "name": "LeftHand",
+            "name": "Left",
             "id": "00abf591-afb3-4963-9978-b14b784c7115",
             "actions": [
                 {
@@ -378,7 +378,7 @@
             ]
         },
         {
-            "name": "RightHand",
+            "name": "Right",
             "id": "27a80071-2db9-4bf9-a536-00514f63ccbf",
             "actions": [
                 {

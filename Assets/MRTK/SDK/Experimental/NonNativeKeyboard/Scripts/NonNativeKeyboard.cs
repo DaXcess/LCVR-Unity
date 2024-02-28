@@ -91,19 +91,14 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
         public TMP_InputField InputField = null;
 
         /// <summary>
-        /// Move the axis slider based on the camera forward and the keyboard plane projection.
-        /// </summary>
-        public AxisSlider InputFieldSlide = null;
-
-        /// <summary>
         /// Bool for toggling the slider being enabled.
         /// </summary>
-        public bool SliderEnabled = true;
+        public bool SliderEnabled = false;
 
         /// <summary>
-        /// Bool to flag submitting on enter
+        /// Bool for closing keyboard on enter
         /// </summary>
-        public bool SubmitOnEnter = true;
+        public bool CloseOnEnter = true;
 
         /// <summary>
         /// The panel that contains the numbers, backspace and close button.
@@ -235,16 +230,6 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
         private Vector3 m_ObjectBounds;
 
         /// <summary>
-        /// The default color of the mike key.
-        /// </summary>        
-        private Color _defaultColor;
-
-        /// <summary>
-        /// The image on the mike key.
-        /// </summary>
-        private Image _recordImage;
-
-        /// <summary>
         /// User can add an audio source to the keyboard to have a click be heard on tapping a key 
         /// </summary>
         private AudioSource _audioSource;
@@ -320,31 +305,14 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
         /// <param name="value">String value.</param>
         private void DoTextUpdated(string value) => OnTextUpdated?.Invoke(value);
 
-        /// <summary>
-        /// Makes sure the input field is always selected while the keyboard is up.
-        /// </summary>
-        private void LateUpdate()
-        {
-            // Axis Slider
-            if (SliderEnabled)
-            {
-                Vector3 nearPoint = Vector3.ProjectOnPlane(Camera.main.transform.forward, transform.forward);
-                Vector3 relPos = transform.InverseTransformPoint(nearPoint);
-                InputFieldSlide.TargetPoint = relPos;
-            }
-
-            CheckForCloseOnInactivityTimeExpired();
-        }
-
         private void UpdateCaretPosition(int newPos) => InputField.caretPosition = newPos;
 
         /// <summary>
         /// Called whenever the keyboard is disabled or deactivated.
         /// </summary>
         protected void OnDisable()
-        {            
+        {
             m_LastKeyboardLayout = LayoutType.Alpha;
-            Clear();
         }
 
 
@@ -420,10 +388,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
 
             OnPlacement(this, EventArgs.Empty);
 
-            // todo: if the app is built for xaml, our prefab and the system keyboard may be displayed.
             InputField.ActivateInputField();
-
-            //SetMicrophoneDefault();
         }
 
 
@@ -533,81 +498,36 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
             switch (keyboardType)
             {
                 case LayoutType.URL:
-                {
-                    ShowAlphaKeyboard();
-                    TryToShowURLSubkeys();
-                    break;
-                }
+                    {
+                        ShowAlphaKeyboard();
+                        TryToShowURLSubkeys();
+                        break;
+                    }
 
                 case LayoutType.Email:
-                {
-                    ShowAlphaKeyboard();
-                    TryToShowEmailSubkeys();
-                    break;
-                }
+                    {
+                        ShowAlphaKeyboard();
+                        TryToShowEmailSubkeys();
+                        break;
+                    }
 
                 case LayoutType.Symbol:
-                {
-                    ShowSymbolKeyboard();
-                    break;
-                }
+                    {
+                        ShowSymbolKeyboard();
+                        break;
+                    }
 
                 case LayoutType.Alpha:
                 default:
-                {
-                    ShowAlphaKeyboard();
-                    TryToShowAlphaSubkeys();
-                    break;
-                }
+                    {
+                        ShowAlphaKeyboard();
+                        TryToShowAlphaSubkeys();
+                        break;
+                    }
             }
         }
 
         #region Keyboard Functions
-
-        #region Dictation
-
-        /// <summary>
-        /// Initialize dictation mode.
-        /// </summary>
-        //private void BeginDictation()
-        //{
-        //    ResetClosingTime();
-        //    dictationSystem.StartRecording(gameObject);
-        //    SetMicrophoneRecording();
-        //}
-
-        private bool IsMicrophoneActive()
-        {
-            var result = _recordImage.color != _defaultColor;
-            return result;
-        }
-
-        /// <summary>
-        /// Set mike default look
-        /// </summary>
-        //private void SetMicrophoneDefault()
-        //{
-        //    _recordImage.color = _defaultColor;
-        //}
-
-        /// <summary>
-        /// Set mike recording look (red)
-        /// </summary>
-        //private void SetMicrophoneRecording()
-        //{
-        //    _recordImage.color = Color.red;
-        //}
-
-        /// <summary>
-        /// Terminate dictation mode.
-        /// </summary>
-        //public void EndDictation()
-        //{
-        //    dictationSystem.StopRecording();
-        //    SetMicrophoneDefault();
-        //}
-
-        #endregion Dictation
 
         /// <summary>
         /// Primary method for typing individual characters to a text field.
@@ -809,22 +729,11 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
         /// </summary>
         public void Enter()
         {
-            if (SubmitOnEnter)
-            {
-                // Send text entered event and close the keyboard
-                OnTextSubmitted?.Invoke(this, EventArgs.Empty);
-            }
-            else
-            {
-                string enterString = "\n";
+            // Send text entered event and close the keyboard
+            OnTextSubmitted?.Invoke(this, EventArgs.Empty);
 
-                m_CaretPosition = InputField.caretPosition;
-
-                InputField.text = InputField.text.Insert(m_CaretPosition, enterString);
-                m_CaretPosition += enterString.Length;
-
-                UpdateCaretPosition(m_CaretPosition);
-            }
+            if (CloseOnEnter)
+                Close();
         }
 
         /// <summary>
@@ -924,9 +833,9 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
             //{
             //    dictationSystem.StopRecording();
             //}
-            //SetMicrophoneDefault();
-            OnClosed(this, EventArgs.Empty);            
+            //SetMicrophoneDefault();        
             gameObject.SetActive(false);
+            OnClosed(this, EventArgs.Empty);
         }
 
         /// <summary>
@@ -969,6 +878,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
         /// </summary>
         public void ShowAlphaKeyboard()
         {
+            NumbersKeyboard.gameObject.SetActive(true);
             AlphaKeyboard.gameObject.SetActive(true);
             m_LastKeyboardLayout = LayoutType.Alpha;
         }

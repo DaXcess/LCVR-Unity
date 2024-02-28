@@ -24,6 +24,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "InteractLeft",
+                    "type": "Button",
+                    "id": "ece2acd8-40da-4c50-b258-89f2130591c2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Turn",
                     "type": "Value",
                     "id": "ac8cad95-23ff-4fde-9385-b25d7b04b868",
@@ -104,6 +113,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "16f6f3c9-d2ea-4ea7-a0d4-ef26388a3199",
+                    "path": "<XRController>{LeftHand}/gripButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InteractLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -416,7 +436,7 @@
                 {
                     "name": "Discard: B",
                     "id": "3214c780-429b-4e8f-a87f-6d966a323ba1",
-                    "path": "<XRController>{LeftHand}/touchpadClicked",
+                    "path": "<XRController>{LeftHand}/{Secondary2dAxisClick}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -548,7 +568,7 @@
                 {
                     "name": "Jump: A",
                     "id": "a1d21d3b-acc2-4d51-ba3c-0dc272230ab9",
-                    "path": "<XRController>{RightHand}/touchpadClicked",
+                    "path": "<XRController>{RightHand}/{Secondary2DAxisClick}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

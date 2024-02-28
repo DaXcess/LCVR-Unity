@@ -24,6 +24,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "InteractLeft",
+                    "type": "Button",
+                    "id": "e7c48da5-3b3f-4d70-98bf-3445c2985a4c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Turn",
                     "type": "Value",
                     "id": "ac8cad95-23ff-4fde-9385-b25d7b04b868",
@@ -104,6 +113,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5bb04c8-5818-488c-b5fe-7124576b31e5",
+                    "path": "<XRController>{LeftHand}/gripButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InteractLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
